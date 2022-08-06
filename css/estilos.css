@@ -1,0 +1,476 @@
+/*body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+}*/
+.title{
+    height: 50px;
+    width: 500px;
+    display: block;
+    margin: auto;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li{
+    float: left;
+}
+.menu{
+    color: red;
+}
+.main-nav {
+    margin: 0;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+.main-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.main-nav ul li {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 5px;
+    letter-spacing: 0.1em;
+    width: 7.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    position: relative;
+    overflow: hidden;
+    margin: 0.5em;
+    cursor: pointer;
+}
+.main-nav span {
+    color: white;
+    mix-blend-mode: difference;
+}
+.main-nav ul li::before {
+    content: '';
+	position: absolute;
+	width: 2.1em;
+	height: inherit;
+	background-color: black;
+	border-radius: 50%;
+	top: 0;
+	left: -0.8em;
+	transition: 0.5s ease-out;
+}
+nav ul li:hover::before {
+	transform: scale(7);
+}
+.titulo{
+    display: flex;
+    height: 20px;
+    width: 300px;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 200px;
+}
+.h3{
+    height: 230px;
+    width: 300px;
+    display: flex 4;
+    padding: 5px;
+    border-top: 10px solid red;
+    border-right: 10px solid red;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-radius: 4%;
+    position: relative;
+    left: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 45vh;
+    flex: 1;
+}
+.noticias{
+    height: 130px;
+    width: 300px;
+    display: flex;
+    padding: 5px;
+    border-bottom: 10px double red;
+    position: relative;
+    left: 600px;
+    top: -280px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.img{
+    height: 150px;
+    width: 300px;
+    position: relative;
+    left: 600px;
+    top: -290px;
+}
+.pos{
+    height: 324px;
+    width: 500px;
+    display: block;
+    position: relative;
+    left: 200px;
+    top: -280px;
+    border: 10px solid red;
+    border-bottom: 1px solid white;
+    border-radius: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.pos2{
+    height: 260px;
+    width: 480px;
+}
+.his{
+    height: 330px;
+    width: 140px;
+    display: block;
+    position: relative;
+    left: 740px;
+    top: -634px;
+    border: 10px solid red;
+    border-radius: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nos{
+    height: 30px;
+    width: 700px;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 200px;
+    top: -600px;
+    border: 5px solid red;
+    border-radius: 10%;
+    text-decoration: none;
+    color: black;
+}
+.f2{
+    height: 250px;
+    width: 700px;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 200px;
+    top: -600px;
+    border-bottom: 10px solid red;
+}
+.vic{
+    height: 20px;
+    width: 260px;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 200px;
+    top: -600px;
+    border-bottom: 5px solid red;
+}
+.vic2{
+    height: 160px;
+    width: 250px;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 10px solid red;
+    border-radius: 10%;
+    position: relative;
+    left: 200px;
+    top: -615px;
+}
+.vic3{
+    height: 250px;
+    width: 400px;
+    position: relative;
+    left: 500px;
+    top: -1250px;
+}
+.calendar{
+    height: 240px;
+    width: 200px;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2%;
+    border: 10px double red;
+    position: relative;
+    left: 200px;
+    top: -600px;
+}
+.champ{
+    height: 150px;
+    width: 200px;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 10px double red;
+    position: relative;
+    left: 600px;
+    top: -796px;
+}
+.p1{
+    height: 230px;
+    width: 300px;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2%;
+    position: relative;
+    left: 177px;
+    border-right: 10px solid red;
+}
+.img2{
+    height: 250px;
+    width: 450px;
+    position: relative;
+    left: 570px;
+    top: -266px;
+}
+.data{
+    height: 30px;
+    width: 750px;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 250px;
+    top: -240px;
+    font-size: small;
+    border: 5px solid red;
+}
+.p2{
+    height: 300px;
+    width: 280px;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 200px;
+    top: -240px;
+    border-right: 10px solid red;
+}
+.img3{
+    height: 300px;
+    width: 500px;
+    position: relative;
+    left: 520px;
+    top: -555px;
+}
+.monaco{
+    height: 250px;
+    width: 400px;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 670px;
+    top: -550px;
+    border-left: 10px solid red;
+}
+.monaco1{
+    height: 250px;
+    width: 450px;
+    position: relative;
+    left: 200px;
+    top: -820px;
+}
+.p3{
+    height: 200px;
+    width: 400px;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 200px;
+    top: -800px;
+    border-top: 10px solid red;
+    border-right: 10px solid red;
+    border-radius: 5%;
+}
+.img4{
+    height: 210px;
+    width: 360px;
+    position: relative;
+    left: 650px;
+    bottom: 1025px
+}
+.h{
+    height: 135px;
+    width: 300px;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 200px;
+    border: 10px solid red;
+    border-radius: 10px;
+}
+.p4{
+    height: 207px;
+    width: 460px;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 550px;
+    top: -160px;
+    border-left: 10px solid red;
+}
+.img5{
+    height: 500px;
+    width: 400px;
+    position: relative;
+    left: 200px;
+    top: -150px;
+    border: 10px solid red;
+    border-radius: 5%;
+}
+.p5{
+    height: 350px;
+    width: 300px;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 650px;
+    top: -690px;
+    border: 10px solid red;
+    border-radius: 5%;
+}
+.vid{
+    position: relative;
+    left: 200px;
+    top: -690px;
+}
+.rell{
+    height: 170px;
+    width: 200px;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 800px;
+    top: -500px;
+    border-left: 10px solid red;
+}
+.pye{
+    height: 50px;
+    width: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 200px;
+}
+.op{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 200px;
+}
+.form{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    left: 200px;
+}
+.redes{
+    position: relative;
+    left: 200px;
+    font-size: 20px;
+}
+body {
+    position: relative;
+    top: 50px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica';
+  }
+  .main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+  }
+  
+  .table-container {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: 1px solid #DADADA;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, .08);
+  }
+  
+  .table-row {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+  }
+  
+  .heading {
+    background-color: #ececec;
+    color: #3e3e3e;
+    font-weight: bold;
+  }
+  
+  .row-item {
+    display: flex;
+    flex: 1;
+    font-size: 14px;
+    padding: 8px 0;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s ease-in-out;
+  }
+  
+  .row-item:hover {
+    cursor: pointer;
+    background-color: #F0F0F0;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, .08);
+  }
+.table-img{
+width: 30px;
+height: 20px;
+}
+.table-img2{
+    width: 20px;
+    height: 20px;
+}
+* {
+    box-sizing: border-box;
+  }
+  .myForm {
+    display: grid;
+    grid-template-areas: 
+      "comments contact"
+      "... button";
+  	grid-template-rows: 12em 2em;  
+  	grid-template-columns: 12em 1fr;
+    grid-gap: .8em;
+    background: #eee;
+    padding: 1.2em;
+  }
+  .myForm label  {
+    grid-area: labels;
+  }
+  .myForm input {
+    grid-area: contact;
+   	width: 100%;
+    padding: 1.1em;
+    border: none;
+    margin-bottom: 1em;
+  }
+  .myForm textarea {
+   min-height: calc(100% - 2em);
+   width: 100%;
+   border: none;
+  }
+  #contact-details {
+   grid-area: contact;
+  }
+  #comment-box {
+   grid-area: comments;
+  }
+  .myForm button {
+    grid-area: button;
+    border: 0;
+    background: red;
+    color: white;
+  }
